@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Shu's Profile</title>
+<link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+	<nav>
+		<label class="logo">Shu's Profile</label>
+        <ul>
+            <li><a href="Home.html">home</a></li>
+            <li><a class="active" href="About.html">about</a></li>
+			<li><a href="Daily.html">Portfolios</a></li>
+        </ul>
+    </nav>
+	<div class="about-section">
+		<h1 class="link" style="margin-top: 1rem;">ABLITIES</h1>
+		<div class="card-container">
+			<div class="card">
+				<div class="imgBox">
+					<img src="./img/masterpiece/1.jpg">
+				</div>
+				<div class="content">
+					<div class="name">
+						<h2>AI<br><span>adobe illustrator</span></h2>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="imgBox">
+					<img src="./img/masterpiece/1.jpg">
+				</div>
+				<div class="content">
+					<div class="name">
+						<h2>ID<br><span>indesign</span></h2>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="imgBox">
+					<img src="./img/masterpiece/1.jpg">
+				</div>
+				<div class="content">
+					<div class="name">
+						<h2>PS<br><span>photoshop</span></h2>
+					</div>
+				</div>
+		</div>
+	</div>
+	</div>
+	<div class="about-section">
+		<h1 class="link">HABBIT</h1>
+		<div class="about-container">
+			<div class="item active" style="background-image: url(./img/masterpiece/1.jpg);">
+				<div class="shadow"></div>
+				<div class="content">
+					<div class="text">
+						<div class="tit">跳舞</div>
+						<div class="sub">我喜歡跳函團五</div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="background-image: url(./img/masterpiece/1.jpg);">
+				<div class="shadow"></div>
+				<div class="content">
+					<div class="text">
+						<div class="tit">看漫畫</div>
+						<div class="sub">描述</div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="background-image: url(./img/masterpiece/1.jpg);">
+				<div class="shadow"></div>
+				<div class="content">
+					<div class="text">
+						<div class="tit">追具</div>
+						<div class="sub">描述</div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="background-image: url(./img/masterpiece/1.jpg);">
+				<div class="shadow"></div>
+				<div class="content">
+					<div class="text">
+						<div class="tit">美食</div>
+						<div class="sub">描述</div>
+					</div>
+				</div>
+			</div>
+			<div class="item" style="background-image: url(./img/masterpiece/1.jpg);">
+				<div class="shadow"></div>
+				<div class="content">
+					<div class="text">
+						<div class="tit">旅遊</div>
+						<div class="sub">我喜歡交朋友</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<script>
+		let items=document.querySelectorAll('.item');
+
+		function setActive(){
+			items.forEach((item)=>{
+				item.classList.remove('active');
+			})
+			this.classList.add('active');
+		}
+
+		items.forEach((item)=>{
+			item.addEventListener('click',setActive);
+		})
+	</script>
+</body>
+</html>
